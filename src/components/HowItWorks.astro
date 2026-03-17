@@ -1,0 +1,63 @@
+---
+const steps = [
+  {
+    number: '01',
+    title: 'Start a conversation',
+    description: 'Open Clearva and share what\'s on your mind. It listens and gently guides the conversation — no prompts to fill out, no intake forms.',
+  },
+  {
+    number: '02',
+    title: 'Gain clarity',
+    description: 'Through your conversation, Clearva helps you understand your feelings and offers validated wellbeing check-ins when they feel right.',
+  },
+  {
+    number: '03',
+    title: 'Take a next step',
+    description: 'Whether it\'s a breathing exercise, a deeper conversation, or connecting with a therapist — you choose what feels right for you.',
+  },
+];
+---
+
+<section class="relative py-24 sm:py-32 lg:py-40">
+  <div class="max-w-[1100px] mx-auto px-6 sm:px-10">
+    <div class="text-center mb-16 sm:mb-20">
+      <span
+        class="inline-block px-4 py-1.5 rounded-full bg-lavender-100/50 text-lavender-600 text-xs font-semibold tracking-[0.15em] uppercase mb-7"
+        data-animate
+      >
+        How it works
+      </span>
+      <h2
+        class="font-display text-[2.25rem] sm:text-[2.75rem] lg:text-[3.25rem] text-lavender-900 leading-[1.12] tracking-tight"
+        data-animate
+        style="transition-delay: 80ms"
+      >
+        Simple to begin, always at your pace
+      </h2>
+    </div>
+
+    <div class="relative max-w-[38rem] mx-auto">
+      <!-- Connecting line -->
+      <div class="absolute left-[27px] sm:left-[29px] top-6 bottom-6 w-px bg-gradient-to-b from-lavender-300/60 via-lavender-300/40 to-lavender-200/20" aria-hidden="true"></div>
+
+      <div class="space-y-14 sm:space-y-16">
+        {steps.map((step, i) => (
+          <div
+            class="relative flex gap-7 sm:gap-8 items-start"
+            data-animate
+            style={`transition-delay: ${100 + i * 120}ms`}
+          >
+            <div class="relative z-10 flex-shrink-0 w-14 h-14 sm:w-[3.5rem] sm:h-[3.5rem] rounded-xl bg-gradient-to-br from-lavender-100 to-white border border-lavender-200/60 shadow-card flex items-center justify-center">
+              <span class="font-display text-lg sm:text-xl italic text-lavender-600">{step.number}</span>
+            </div>
+
+            <div class="pt-0.5 sm:pt-1">
+              <h3 class="text-lg font-semibold text-lavender-900 mb-1.5">{step.title}</h3>
+              <p class="text-gray-500 leading-[1.7] text-[0.9375rem] max-w-md">{step.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

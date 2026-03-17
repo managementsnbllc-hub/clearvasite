@@ -1,0 +1,47 @@
+---
+const ctaUrl = 'https://clearva.vercel.app';
+---
+
+<section class="relative py-28 sm:py-36 lg:py-44 overflow-hidden">
+  <!-- Richer layered background -->
+  <div class="absolute inset-0 bg-gradient-to-b from-lavender-50/40 via-lavender-100/50 to-lavender-50/30" aria-hidden="true"></div>
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full bg-gradient-to-b from-lavender-200/25 to-warm-100/15 blur-[120px]" aria-hidden="true"></div>
+
+  <div class="relative z-10 max-w-[36rem] mx-auto px-6 sm:px-10 text-center">
+    <h2
+      class="font-display text-[2.25rem] sm:text-[2.75rem] lg:text-[3.25rem] text-lavender-900 leading-[1.12] tracking-tight mb-6"
+      data-animate
+    >
+      Ready to take a quiet moment for yourself?
+    </h2>
+
+    <p
+      class="text-[1.0625rem] sm:text-lg text-gray-500 leading-[1.7] mb-11"
+      data-animate
+      style="transition-delay: 80ms"
+    >
+      Free to use. No sign-up. Just a calm space to begin.
+    </p>
+
+    <div data-animate style="transition-delay: 160ms">
+      <div class="relative inline-block">
+        <div class="absolute inset-0 bg-lavender-400/20 blur-2xl rounded-full scale-[1.8] animate-pulse-glow" aria-hidden="true"></div>
+        <a
+          href={ctaUrl}
+          class="group relative inline-flex items-center gap-2.5 px-9 py-4 bg-lavender-700 text-white text-[1.0625rem] font-medium rounded-full shadow-lg shadow-lavender-600/20 hover:bg-lavender-800 hover:shadow-xl hover:shadow-lavender-600/25 hover:-translate-y-0.5 transition-all duration-300"
+        >
+          Try Clearva
+          <svg
+            class="w-[18px] h-[18px] opacity-80 group-hover:translate-x-0.5 group-hover:opacity-100 transition-all duration-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

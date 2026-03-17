@@ -1,0 +1,20 @@
+---
+const ctaUrl = 'https://clearva.vercel.app';
+---
+
+<nav id="main-nav" class="fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-[1100px] mx-auto px-6 sm:px-10 py-5 flex items-center justify-between">
+    <a href="/" class="font-display text-[1.35rem] italic text-lavender-800 tracking-tight leading-none">
+      clearva
+    </a>
+    <a
+      href={ctaUrl}
+      class="inline-flex items-center gap-1.5 px-5 py-2 bg-lavender-700/90 text-white text-[0.8125rem] font-medium rounded-full shadow-sm shadow-lavender-500/15 hover:bg-lavender-800 hover:shadow-md hover:shadow-lavender-500/20 transition-all duration-300"
+    >
+      Try it out
+      <svg class="w-3.5 h-3.5 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+      </svg>
+    </a>
+  </div>
+</nav>
