@@ -1,7 +1,7 @@
 ---
 ---
 
-<section class="relative py-24 sm:py-32 lg:py-40">
+<section class="relative py-24 sm:py-32 lg:py-40 overflow-hidden">
   <div class="max-w-7xl mx-auto px-6 sm:px-10">
     <div class="text-center mb-14 sm:mb-16">
       <span
@@ -38,7 +38,7 @@
           <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[90px] h-[22px] bg-lavender-900/85 rounded-b-2xl z-10"></div>
 
           <!-- Screen content -->
-          <div class="h-full flex flex-col pt-7">
+          <div class="pt-7 pb-0 sm:h-full sm:flex sm:flex-col">
             <!-- App header -->
             <div class="px-4 py-2.5 border-b border-lavender-200/40 flex items-center justify-between">
               <span class="font-display italic text-lavender-800 text-[13px]">clearva</span>
@@ -48,18 +48,18 @@
             </div>
 
             <!-- Chat area -->
-            <div class="flex-1 px-3 py-3 space-y-2.5 overflow-hidden">
+            <div class="sm:flex-1 px-3 py-2 sm:py-3 space-y-2 sm:space-y-2.5 overflow-hidden">
               <!-- Bot message -->
               <div class="flex gap-1.5 items-end">
                 <div class="w-4 h-4 rounded-full bg-lavender-200 flex-shrink-0 mb-0.5"></div>
-                <div class="bg-white rounded-2xl rounded-bl-md px-3 py-2 text-[10px] leading-[1.5] text-gray-700 max-w-[80%] shadow-sm border border-lavender-100/50">
+                <div class="bg-white rounded-2xl rounded-bl-md px-3 py-2 text-[9px] sm:text-[10px] leading-[1.5] text-gray-700 max-w-[80%] shadow-sm border border-lavender-100/50">
                   Hi there. How are you feeling today?
                 </div>
               </div>
 
               <!-- User message -->
               <div class="flex justify-end">
-                <div class="bg-lavender-200/80 rounded-2xl rounded-br-md px-3 py-2 text-[10px] leading-[1.5] text-lavender-900 max-w-[72%]">
+                <div class="bg-lavender-200/80 rounded-2xl rounded-br-md px-3 py-2 text-[9px] sm:text-[10px] leading-[1.5] text-lavender-900 max-w-[72%]">
                   I've been feeling anxious lately, especially at night
                 </div>
               </div>
@@ -67,14 +67,14 @@
               <!-- Bot message -->
               <div class="flex gap-1.5 items-end">
                 <div class="w-4 h-4 rounded-full bg-lavender-200 flex-shrink-0 mb-0.5"></div>
-                <div class="bg-white rounded-2xl rounded-bl-md px-3 py-2 text-[10px] leading-[1.5] text-gray-700 max-w-[80%] shadow-sm border border-lavender-100/50">
+                <div class="bg-white rounded-2xl rounded-bl-md px-3 py-2 text-[9px] sm:text-[10px] leading-[1.5] text-gray-700 max-w-[80%] shadow-sm border border-lavender-100/50">
                   Thank you for sharing that. It takes courage to put those feelings into words. Can you tell me more about what the anxiety feels like?
                 </div>
               </div>
 
               <!-- User message -->
               <div class="flex justify-end">
-                <div class="bg-lavender-200/80 rounded-2xl rounded-br-md px-3 py-2 text-[10px] leading-[1.5] text-lavender-900 max-w-[72%]">
+                <div class="bg-lavender-200/80 rounded-2xl rounded-br-md px-3 py-2 text-[9px] sm:text-[10px] leading-[1.5] text-lavender-900 max-w-[72%]">
                   It's like this tightness in my chest
                 </div>
               </div>
@@ -82,7 +82,7 @@
               <!-- Bot message with coping suggestion -->
               <div class="flex gap-1.5 items-end">
                 <div class="w-4 h-4 rounded-full bg-lavender-200 flex-shrink-0 mb-0.5"></div>
-                <div class="bg-white rounded-2xl rounded-bl-md px-3 py-2 text-[10px] leading-[1.5] text-gray-700 max-w-[80%] shadow-sm border border-lavender-100/50">
+                <div class="bg-white rounded-2xl rounded-bl-md px-3 py-2 text-[9px] sm:text-[10px] leading-[1.5] text-gray-700 max-w-[80%] shadow-sm border border-lavender-100/50">
                   <p>I hear you. That physical sensation is really common with anxiety.</p>
                   <div class="mt-1.5 px-2 py-1.5 rounded-lg bg-lavender-50 border border-lavender-200/60 text-lavender-700">
                     <span class="text-[9px] font-medium">Would you like to try a breathing exercise?</span>
@@ -110,9 +110,6 @@
 </section>
 
 <style>
-  .phone-frame {
-    aspect-ratio: 9 / 17;
-  }
   @media (min-width: 640px) {
     .phone-frame {
       aspect-ratio: 9 / 19.5;
